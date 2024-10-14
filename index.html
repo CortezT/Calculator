@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/style.css">
     <title>javaScript Calculator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"></script>
 </head>
 
 
@@ -18,43 +19,30 @@
             <td><input type="button" value="c" onclick="clr()" /> </td>
         </tr>
         <tr>
-            <td><input type="button" value="1" onclick="dis('1')"
-                        onkeydown="" ></td>
-            <td><input type="button" value="2" onclick="dis('2')"
-                        onkeydown="" ></td>
-            <td><input type="button" value="3" onclick="dis('3')"
-                        onkeydown="" > </td>
-            <td><input type="button" value="/" onclick="dis('/')"
-                        onkeydown="" > </td>
+            <td><input type="button" value="1" onclick="addToDisplay('1')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="2" onclick="addToDisplay('2')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="3" onclick="addToDisplay('3')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="/" onclick="addToDisplay('/')" onkeydown="thisFunction(event)"></td>
         </tr>
         <tr>
-            <td><input type="button" value="4" onclick="('4')"
-                        onkeydown=""> </td>
-            <td><input type="button" value="5" onclick="('5')"
-                        onkeydown=""> </td>
-            <td><input type="button" value="6" onclick="('6')"
-                        onkeydown=""> </td>
-            <td><input type="button" value="*" onclick="('*')"
-                        onkeydown=""> </td>
+            <td><input type="button" value="4" onclick="addToDisplay('4')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="5" onclick="addToDisplay('5')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="6" onclick="addToDisplay('6')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="*" onclick="addToDisplay('*')" onkeydown="thisFunction(event)"></td>
         </tr>
         <tr>
-            <td><input type="button" value="7" onclick="('7')"
-                        onkeydown=""> </td>
-            <td><input type="button" value="8" onclick="('8')"
-                        onkeydown=""> </td>
-            <td><input type="button" value="9" onclick="('9')"
-                        onkeydown=""> </td>
-            <td><input type="button" value="-" onclick="('-')"
-                        onkeydown=""> </td>
+            <td><input type="button" value="7" onclick="addToDisplay('7')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="8" onclick="addToDisplay('8')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="9" onclick="addToDisplay('9')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="-" onclick="addToDisplay('-')" onkeydown="thisFunction(event)"></td>
         </tr>
         <tr>
-            <td><input type="button" value="0" onclick="('0')"
-                        onkeydown=""> </td>
-            <td><input type="button" value="." onclick="('.')"
-                        onkeydown=""> </td>
-            <td><input type="button" value="=" onclick="()"></td>
-            <td><input type="button" value="+" onclick="('+')"
-                        onkeydown=""> </td>
+            <td><input type="button" value="0" onclick="addToDisplay('0')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="." onclick="addToDisplay('.')" onkeydown="thisFunction(event)"></td>
+            <td><input type="button" value="=" onclick="solve()"></td>
+            <td><input type="button" value="+" onclick="addToDisplay('+')" onkeydown="thisFunction(event)"></td>
         </tr>
     </table>
+
+    <script src="assets/script.js"></script>
 </body>
