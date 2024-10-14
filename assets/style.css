@@ -1,0 +1,116 @@
+/* Resetting default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282c34;
+    /* Dark background for contrast */
+    color: #ffffff;
+    /* Light text color */
+    font-family: Arial, sans-serif;
+    /* Font for the entire body */
+    display: flex;
+    justify-content: center;
+    /* Center the calculator horizontally */
+    align-items: center;
+    /* Center the calculator vertically */
+    flex-direction: column;
+    /* Stack items vertically */
+    height: 100vh;
+    /* Full viewport height */
+}
+
+.container {
+    text-align: center;
+    /* Center text inside the container */
+    max-width: 400px;
+    /* Set a max width for the calculator */
+    width: 100%;
+    /* Full width for small devices */
+}
+
+h1 {
+    color: #61dafb;
+    /* React blue color for title */
+    margin-bottom: 10px;
+    /* Spacing below the title */
+}
+
+p {
+    margin-bottom: 20px;
+    /* Spacing below the paragraph */
+    font-size: 18px;
+    /* Font size for description */
+    line-height: 1.5;
+    /* Line height for readability */
+}
+
+#calc {
+    border-radius: 10px;
+    /* Rounded corners for the calculator */
+    overflow: hidden;
+    /* Clip the corners */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Shadow effect */
+}
+
+input[type="button"] {
+    width: 100%;
+    /* Full width for buttons */
+    padding: 20px;
+    /* Padding inside buttons */
+    background-color: #61dafb;
+    /* Button background color */
+    color: #282c34;
+    /* Text color on buttons */
+    font-size: 24px;
+    /* Font size for buttons */
+    font-weight: bold;
+    /* Bold text for buttons */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners for buttons */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.1s;
+    /* Smooth transition */
+}
+
+input[type="button"]:hover {
+    background-color: #21a1f1;
+    /* Darker blue on hover */
+}
+
+input[type="button"]:active {
+    transform: scale(0.95);
+    /* Slightly shrink button on press */
+}
+
+input[type="text"] {
+    padding: 20px;
+    /* Padding for input field */
+    font-size: 24px;
+    /* Font size for input */
+    font-weight: bold;
+    /* Bold input text */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners for input */
+    text-align: right;
+    /* Right-align the text */
+    width: calc(100% - 20px);
+    /* Adjust width considering padding */
+    margin: 10px;
+    /* Margin for spacing */
+    background-color: #ffffff;
+    /* White background for the input field */
+    color: #282c34;
+    /* Dark text color */
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Inner shadow for depth */
+}
