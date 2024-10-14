@@ -19,7 +19,7 @@ A simple, responsive JavaScript calculator that performs basic arithmetic operat
 
 ## Demo
 
-![Calculator Demo](![Calculator](https://github.com/user-attachments/assets/2fd294ff-2fac-4847-9400-61ae93a1b946))
+![Calculator](https://github.com/user-attachments/assets/adeb8206-2d1e-4d35-8a0e-a9bfe854aacb)
 
 ## Technologies Used
 
